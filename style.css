@@ -1,0 +1,426 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+
+}
+
+nav {
+  background-color: rgb(6, 20, 24);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+
+}
+
+.Logo {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 26px;
+  color: rgb(163, 142, 24);
+
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+}
+
+.nav-link li {
+  margin: 0 1rem;
+  margin-right: 20px;
+
+
+}
+
+.nav-link a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.nav-link a:hover {
+  color: #af21aa;
+}
+
+#profile {
+  background: rgb(235, 110, 214);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: rgb(147, 141, 141);
+}
+
+.profile-content img {
+  width: 250px;
+  border-radius: 50%;
+  bottom: 200px;
+
+
+}
+
+.profile-content h1 {
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(22, 133, 141);
+
+
+}
+
+button {
+  background-color: #963b1a;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 10px;
+}
+input[type="submit"]{
+  background-color: #963b1a;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 10px;
+
+}
+input[type="submit"]:hover{
+  background-color: #deec14;
+  color: #1b1d1d;
+  border: 2px solid white;
+
+}
+
+button:hover {
+  background-color: #deec14;
+  /* #acb618;       */
+  color: #1b1d1d;
+}
+
+#Education {
+  padding: 50px;
+  background-color: #f4f4f4;
+
+}
+
+#Education h2 {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+
+}
+
+.Education-card {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.Education-card h3 {
+  color: #007bff;
+  font-size: 1.8rem;
+}
+
+.Education-card p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.Education-card strong {
+  color: #000;
+
+}
+
+#Contact {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#Contact h2 {
+  font-size: 36px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#Contact p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+
+}
+
+.contact-card {
+  background-color: #e8edf3;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+.field {
+  margin-bottom: 20px;
+  text-align: left;
+
+}
+
+.field label {
+  display: block;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #333;
+
+}
+
+.field input,
+.field textarea {
+  width: 96%;
+  padding: 10px;
+  border: 1px solid#ddd;
+  border-radius: 16px;
+  font-size: 16px;
+
+}
+
+.field textarea {
+  height: 150px;
+  resize: none;
+}
+
+#Project {
+  background-color: #f9f9f9;
+}
+
+#Project h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.group-card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.project-card {
+  position: relative;
+  height: 200px;
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-description {
+  position: absolute;
+  top: 0%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: left 0.5s ease;
+
+}
+
+.project-description h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #e0ab0c;
+  text-align: center;
+}
+
+.project-description p {
+  margin: 10px 0;
+  padding: 0 20px;
+  font-size: 1em;
+}
+
+.project-card:hover .project-description {
+  left: 0;
+
+}
+
+.view-botton {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff704d;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+#Blog {
+  padding: 50px 0;
+  background-color: #f4f4f9;
+  text-align: center;
+}
+
+#Blog h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.scroll-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #ff5733 transparent;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #ff5733;
+  border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: #f4f4f9;
+}
+
+.blog-card {
+  min-width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: scale(1.05);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-card h3 {
+  margin: 20px 0 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.blog-card p {
+  padding: 0 20px;
+  font-size: 1em;
+  color: #666;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff5733;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #ff704d;
+}
+
+footer {
+  background-color: #151515;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  font-size: 16px;
+}
+
+.footer-content .socials {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.footer-content .socials li {
+  margin: 0 10px;
+}
+
+.footer-content .socials a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-content .socials a:hover {
+  color: #ff6347;
+}
+
+.footer-bottom {
+  background-color: #9e9e9e;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.socials img {
+  width: 45px;
+  transition: transform 0.3s ease
+}
+
+.socials img:hover {
+  transform: scale(1.08);
+}
